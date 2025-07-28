@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'PiExplorer'
 theme = 'ananke_fork'
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
