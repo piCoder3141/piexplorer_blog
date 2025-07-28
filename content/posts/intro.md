@@ -6,4 +6,5 @@ title = 'Introduction'
 
 ## Introduction
 Welcome to my new site!
+Testing some math here - $e^{i\pi} + 1 = 0$. 
 

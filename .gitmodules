@@ -1,0 +1,3 @@
+[submodule "themes/ananke_fork"]
+	path = themes/ananke_fork
+	url = git@github.com:piCoder3141/gohugo-theme-ananke-fork.git
