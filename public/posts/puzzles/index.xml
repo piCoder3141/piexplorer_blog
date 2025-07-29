@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on PiExplorer</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on PiExplorer</description>
+    <title>Puzzles on PiExplorer</title>
+    <link>http://localhost:1313/posts/puzzles/</link>
+    <description>Recent content in Puzzles on PiExplorer</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Jul 2025 04:49:51 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/puzzles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Drunk Man moving North and East</title>
       <link>http://localhost:1313/posts/puzzles/drunk_man_ne/</link>
       <pubDate>Tue, 29 Jul 2025 04:49:51 +0000</pubDate>
       <guid>http://localhost:1313/posts/puzzles/drunk_man_ne/</guid>
       <description>&lt;h2 id=&#34;problem&#34;&gt;Problem&lt;/h2&gt;&#xA;&lt;p&gt;A drunk man leaves a bar and every second it gets harder for him to move.&#xA;In the $t^{th}$ second, he moves a distance of $\frac{1}{2^{t-1}}$ m, either in the north or east direction with equal probability.&#xA;What will be his expected Euclidean distnace from the bar after a long time?&lt;/p&gt;&#xA;&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;</description>
-    </item>
-    <item>
-      <title>Introduction</title>
-      <link>http://localhost:1313/posts/intro/</link>
-      <pubDate>Mon, 28 Jul 2025 18:04:29 +0000</pubDate>
-      <guid>http://localhost:1313/posts/intro/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to my new blog! Will be talking about my random hobbies here.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

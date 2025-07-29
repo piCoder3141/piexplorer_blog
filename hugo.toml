@@ -2,6 +2,7 @@ baseURL = 'https://picoder3141.github.io/'
 languageCode = 'en-us'
 title = 'PiExplorer'
 theme = 'ananke_fork'
+sectionPagesMenu = 'main'
 
 [caches]
   [caches.images]
