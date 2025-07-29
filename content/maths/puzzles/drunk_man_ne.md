@@ -1,6 +1,6 @@
 +++
 date = '2025-07-29T04:49:51Z'
-draft = true
+draft = false
 title = 'Drunk Man moving North and East'
 +++
 
