@@ -1,5 +1,5 @@
 +++
-date = '2025-07-29T06:41:25Z'
+date = '2025-08-02T06:41:25Z'
 draft = true
 title = 'Nature'
 +++
