@@ -18,3 +18,4 @@ sectionPagesMenu = 'main'
           inline = [['$', '$']]
 [params]
   math = true
+  toc = true

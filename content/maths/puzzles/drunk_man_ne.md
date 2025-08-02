@@ -23,7 +23,7 @@ We have two ways to compute $d^E_t$. However, the first method can be used only 
 For computing $(d^E_t)^2$, define indicator variables $I_t$, such that $I_t$ is $1$ if the drunk man moves in the x-direction in the $t^{th}$ step, and $0$ otherwise.
 Then, the final x-position of the drunk man can be represented by the random variable
 \[
-X = 1 I_1 + \frac 12 I_2 + \frac 14 + \ldots,
+X = 1 I_{1} + \frac 12 I_{2} + \frac 14 + \ldots,
 \]
 Since the drunk man moves north or east with equal probability, $E[I_t] = 0.5$, for all $t$.
 We know that the drunk man eventually lands on the line $x+y=2$, thus his y-position would eventually be $y = x - 2$.
@@ -43,3 +43,37 @@ Therefore,
 \[
 E\left[\lim_{t \rightarrow \infty} (d^E_t)^2 \right] = E[X^2 + (2 - X)^2] = 2 (E[X^2] - 2 E[X] + 2) = 2 \left(\frac 43 - 2 + 2\right) = \frac 83.
 \]
+
+Another way to approach this problem is to think where the drunk man lands on the line $x+y=2$ and with what probability?
+It can be shown that the drunk man lands on every point of the line almost uniformly. (Look at the end of this article for the proof.)
+Given this, the expected distance can be calculated simply by integrating over the line segment of the line $x+y=2$ in the first quadrant.
+Parametrize the line as $(1+t, 1-t)$ for $-1 \leq t \leq 1$.
+Then, $\lim_{t \rightarrow \infty} d^E_t$ and $\lim_{t \rightarrow \infty}(d^E_t)^2$ can be computed as
+\[
+\begin{aligned}
+\lim_{t \rightarrow \infty} d^E_t &= \frac{1}{1 - (-1)} \int_{-1}^1 \sqrt{(1-t)^2 + (1+t)^2} dt = \frac{1}{\sqrt{2}} \left( ln(\sqrt{2} + 1) + \sqrt{2}\right) \approx 1.62\\
+\lim_{t \rightarrow \infty} (d^E_t)^2 &= \frac{1}{1 - (-1)} \int_{-1}^1 (1-t)^2 + (1+t)^2 dt = \frac 83\\  
+\end{aligned}
+\]
+
+_But why is the probability uniform?_
+
+<!---
+\[
+\begin{aligned}
+x_p &= vT + \frac 12 a_{acc}(T - T_p)^2 - L\\
+x_s &= vT_p + \frac{v^2}{a_{dec}}
+\end{aligned}
+\]
+where $x_p = $ distance for safely proceeding, $x_s = $ distance for safely stopping, $v = $ approach speed, $T = $ yellow light duration, $T_p = $ perception time, and $L = $ length of the car.
+
+We want $x_p > x_s$ for no dilemma zone. That is, 
+\[
+\begin{aligned}
+vT + \frac 12 a_{acc}(T - T_p)^2 - L > vT_p + \frac{v^2}{a_{dec}}\\
+(T-T_p) \left( v + \frac 12 a_{acc}(T-T_p) \right) > \frac{v^2}{a_{dec}} + L\\
+\end{aligned}
+\]
+
+_How to choose the optimal $T$ from here which would work for any given $v$?_
+-->
